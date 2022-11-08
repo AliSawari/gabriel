@@ -19,3 +19,15 @@ is_port_running(){
 run_test_server() {
   python3 -m http.server $1
 }
+
+docker_stop_all(){
+  docker stop $(docker ps -aq)
+}
+
+docker_kill_all(){
+  docker kill $(docker ps -aq)
+}
+
+docker_rm_all(){
+  docker rm $(docker ps -aq)
+}
