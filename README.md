@@ -83,6 +83,12 @@ $ get_random_str 16
 Output: `15090fd27af598c5`
 
 
+### Docker container helpers
+
+- **docker_stop_all** Stops all containers
+- **docker_kill_all** Kills all containers
+- **docker_rm_all** Removes all containers
+
 
 ## License
 
