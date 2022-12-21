@@ -1,3 +1,5 @@
+#!/bin/bash
+
 zshrc="$HOME/.zshrc"
 bashrc="$HOME/.bashrc"
 
