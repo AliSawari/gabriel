@@ -31,3 +31,14 @@ docker_kill_all(){
 docker_rm_all(){
   docker rm $(docker ps -aq)
 }
+
+
+ip_ban_from_file(){
+  for IP in $(cat $1); do echo "Banning $IP"; iptables -A INPUT -s $IP/32 -d 0/0 -j DROP; done
+}
+
+ufw_ban_from_file(){
+  for IP in $(cat $1); do echo "Banning $IP"; ufw deny from $IP to any; done
+}
+
+
