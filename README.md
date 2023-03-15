@@ -13,12 +13,13 @@ The Idea behind this minimalistic script is to perform easy and mundane DevOps T
 
 ## Setup
 
-you can use this script as a one time session with the `source` command
+Run the `install.sh` script once to insert gabriel to your shell profile. it will automatically detect your shell type.
 
 ```bash
-$ source ./gabriel.sh
+$ install.sh
 ```
-Or you can add this to your shell profile
+
+alternatively, you can manually edit your shell config file to add gabriel. 
 
 **Bash**
 
