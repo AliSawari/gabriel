@@ -43,7 +43,7 @@ ufw_ban_from_file(){
 
 
 get_banned_ips(){
-  cat /var/lib/fail2ban.log | grep 'Ban';
+  cat /var/log/fail2ban.log | grep 'Ban';
 }
 
 
